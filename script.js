@@ -10,8 +10,9 @@ let typed = new Typed(".typing",{
     backSpeed: 80,
 });
 
-let typed = new Typed(".typing-2",{
-    strings: ["web desaigner","you tuber","player","cooking specialist"],
+let new_typed = new Typing-2("typing-2",{
+    strings: ["Yoga trainer","you tuber","player","cooking specialist"],
     typeSpeed: 1000,
     backSpeed: 60,
+   
 });
