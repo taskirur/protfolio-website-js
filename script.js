@@ -1,5 +1,5 @@
 //1rem=16px
-//1:34:00
+//2.20
 //https://youtu.be/lnV4drMyo-Q
 
 
@@ -10,9 +10,9 @@ let typed = new Typed(".typing",{
     backSpeed: 80,
 });
 
-let new_typed = new Typing-2("typing-2",{
+let new_typed = new Typed(".typing-2",{
     strings: ["Yoga trainer","you tuber","player","cooking specialist"],
-    typeSpeed: 1000,
-    backSpeed: 60,
+    typeSpeed: 100,
+    backSpeed: 70,
    
 });
