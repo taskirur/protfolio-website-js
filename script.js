@@ -1,5 +1,5 @@
 //1rem=16px
-//2.20
+//2.40
 //https://youtu.be/lnV4drMyo-Q
 
 

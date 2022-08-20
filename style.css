@@ -388,11 +388,11 @@ header::before{
     box-shadow: 0.3rem 0.3rem rgba(0,0,0,0.2);
 }
 
-.serivces_container .bar{
+.skills_container .bar{
     margin: 1.2rem 0;
 }
 
-.serivces_container .bar:first-child{
+.skills_container .bar:first-child{
     margin-top: 0rem;
 
 }
@@ -466,4 +466,100 @@ header::before{
 
 .bar .progress-line.Javascript span{
     width: 95%;
+}
+
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -0.7rem;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 0.5rem solid transparent;
+    border-bottom-width: 0rem;
+    border-right-width: 0rem;
+    border-top-color: var(--bg);
+    opacity: 0;
+    animation: showText2 0.5s 1s linear forwards;
+
+}
+
+.progress-line span::after{
+    position: absolute;
+    top: -1.8rem;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    opacity: 0;
+    animation: showText2 0.5s 1s linear forwards;
+}
+
+@keyframes showText2{
+    100%{
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after{
+    content: "90%";
+
+}
+
+.progress-line.css span::after{
+    content: "60%";
+    
+}
+
+.progress-line.Jquery span::after{
+    content: "85%";
+    
+}
+
+.progress-line.Mysquel span::after{
+    content: "90%";
+    
+}
+
+.progress-line.Javascript span::after{
+    content: "90%";
+    
+}
+
+.portfolio_container{
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: var(--black);
+    border-radius: 2rem;
+
+}
+
+.gallery a{
+    height: 15rem;
+    width: 20rem;
+    margin: 1.2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-shadow: 0 3px 5px var(--primary);
+}
+
+.gallery a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery a img:hover{
+    transform: scale(1.4);
 }
